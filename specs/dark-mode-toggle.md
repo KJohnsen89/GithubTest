@@ -12,6 +12,7 @@ button, and remember their choice across visits.
 - The choice is remembered on reload (stored in the browser).
 - Doesn't break the existing heading, graphic, or topics list — they just
   restyle to match the theme.
+- The button stays fixed in the top-left corner of the viewport.
 
 ## Non-goals
 - No automatic live-switching if the OS theme changes while the page is open.
@@ -31,4 +32,5 @@ button, and remember their choice across visits.
 - Button label style: **icon + text combined**.
 
 ## Status
-Implemented on branch `dark-mode-toggle` (commit 872f5fb).
+Implemented on branch `dark-mode-toggle`. Button position adjusted to
+top-left corner (fixed) after initial review.
