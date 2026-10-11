@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160" role="img" aria-label="Simple git branch diagram">
+  <defs>
+    <style>
+      .line { stroke: #4a90d9; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .commit { fill: #2d6cc0; stroke: #ffffff; stroke-width: 3; }
+      .commit-branch { fill: #4caf50; stroke: #ffffff; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <!-- main line -->
+  <path class="line" d="M 40 20 L 40 140" />
+  <!-- branch line -->
+  <path class="line" d="M 40 70 C 90 70, 90 70, 150 100" />
+
+  <!-- commits on main -->
+  <circle class="commit" cx="40" cy="20" r="10" />
+  <circle class="commit" cx="40" cy="70" r="10" />
+  <circle class="commit" cx="40" cy="140" r="10" />
+
+  <!-- commit on branch -->
+  <circle class="commit-branch" cx="150" cy="100" r="10" />
+</svg>
