@@ -1,3 +1,17 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #222;
+  --button-bg: #ffffff;
+  --button-border: #ccc;
+}
+
+[data-theme="dark"] {
+  --bg: #1b1b1b;
+  --text: #f0f0f0;
+  --button-bg: #2d2d2d;
+  --button-border: #555;
+}
+
 body {
   font-family: system-ui, sans-serif;
   display: flex;
@@ -5,8 +19,9 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background: #f4f4f4;
-  color: #222;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 main {
@@ -19,4 +34,18 @@ main {
   max-width: 200px;
   width: 100%;
   height: auto;
+}
+
+.theme-toggle {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--button-border);
+  border-radius: 6px;
+  background: var(--button-bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  opacity: 0.85;
 }
